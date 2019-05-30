@@ -27,3 +27,12 @@ docker run -d \
     idrum4316/olaris:tag
 ```
 
+## Building the Image
+To build the image, you need to have a build of Olaris in your working directory, called `olaris-linux-amd64`. Then you can build the image by doing a basic:
+
+```
+docker build -t idrum4316/olaris:tag .
+```
+
+## Reporting Issues
+If you run into any issues with this image, let me know on [GitHub](https://github.com/idrum4316/olaris-docker).
