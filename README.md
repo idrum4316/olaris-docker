@@ -15,14 +15,13 @@ docker run -d \
 ```
 
 ## Cache/Transcode Volume
-If you want to store the cache files in a volume, you can specify a volume and environment variable to configure that. This is where temporary transcode files are stored, so it can get fairly large depending on what your server is doing.
+The cache location in the container is `/cache`. This is where temporary transcode files are stored, so it can get fairly large depending on what your server is doing. It may be helpful to use a volume for the cache directory if you don't have enough free space to store those files in the container.
 
 ```
 docker run -d \
     -v /path/to/media:/var/media \
     -v /path/to/config:/root/.config/olaris \
     -p 8080:8080 \
-    -e XDG_CACHE_HOME=/cache \
     -v /path/to/cache:/cache \
     idrum4316/olaris:tag
 ```
