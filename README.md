@@ -1,5 +1,5 @@
 # Olaris (Unofficial)
-This is an unofficial image I'm maintaining for [Olaris](https://gitlab.com/olaris/olaris-server). Keep in mind that Olaris is still in heavy development, and it may be unstable at times.
+This is an unofficial image I'm maintaining for [Olaris](https://gitlab.com/olaris/olaris-server). Keep in mind that Olaris is pre-release software, and may be unstable at times.
 
 **Use this image at your own risk.**
 
