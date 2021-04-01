@@ -1,10 +1,7 @@
-FROM alpine
+FROM ubuntu:20.04
 
 # Dependencies for Olaris
-RUN apk add curl
-
-# Go expects glibc, but link musl instead
-RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
+RUN apt update && apt install -y curl
 
 # Copy the binary into the image
 COPY olaris /usr/local/bin/olaris
